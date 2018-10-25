@@ -58,7 +58,7 @@ Server Build Tools| Gradle
 2. `CTRL + SHIFT + ALT + S` -> ` Modules` -> `+` -> ` Import Module` -> `Выберите backend папку, указав что это GRADLE проект`;
 3. -//- то же самое для папки `frontend`, только не указывая что это gradle-проект, а выбрав `Create module from existing sources`.
 
-#### Запуск бэкэнда
+### Запуск бэкэнда
 
 `gradle Build` : Перейдите в корневую папку  `build.gradle` и выполните:
 
@@ -70,22 +70,22 @@ gradle bootRun
 _Приложение будет запущено на [http://localhost:8091](http://localhost:8091)._
 
 
-#### Запуск фронтэнда
+### Запуск фронтэнда
 
-# Перейдите в корневую папку `frontend` (должен содержать `package.json`)
+Перейдите в корневую папку `frontend` (должен содержать `package.json`)
 
 ```npm
 npm install
 
 npm start
 ```
-_Приложение будет запущено на  [http://localhost:8080](http://localhost:8080)._
+_Приложение будет запущено на  [http://localhost:8081](http://localhost:8081)._
 
 ___
 
-_Чтобы убить процесс на порту 8080 (Windows)_:
+_Чтобы убить процесс на порту 8081 (Windows)_:
 
 ```sbtshell
-1. netstat -ano | findstr 8080
+1. netstat -ano | findstr 8081
 2. taskkill /pid ПОРТ /F
 ``` 
