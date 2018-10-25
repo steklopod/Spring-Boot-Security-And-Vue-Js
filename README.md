@@ -54,40 +54,38 @@ Server Build Tools| Gradle
 ## Использование
 #### Импорт проекта (_Intellij IDEA_)
 
-1. `File` -> `New` -> `Project From Existing Source` -> укажите путь к проекту
-2. `CTRL + SHIFT + ALT + S` -> ` Modules` -> `+` -> ` Import Module` -> `Выберите backend папку, указав что это GRADLE проект`
-3. -//- то же самое для папки `frontend`, только не указывая что это gradle-проект, а выбрав `Create module from existing sources`
+1. `File` -> `New` -> `Project From Existing Source` -> укажите путь к проекту;
+2. `CTRL + SHIFT + ALT + S` -> ` Modules` -> `+` -> ` Import Module` -> `Выберите backend папку, указав что это GRADLE проект`;
+3. -//- то же самое для папки `frontend`, только не указывая что это gradle-проект, а выбрав `Create module from existing sources`.
 
-#### Build/Run Backend (SpringBoot Java)
+#### Запуск бэкэнда
 
-```
-# Gradle Build : Перейдите в корневую папку  `build.gradle` присутствует
+`gradle Build` : Перейдите в корневую папку  `build.gradle` и выполните:
+
+```sbtshell
 gradle bootRun
-
-# или
-
-# запустите из IDE
 ```
-Приложение будет запущено на [http://localhost:8091](http://localhost:8091).
+или запустите из IDE класс `ru.steklopod.Application`.
 
-#### Build/Run Frontend (optional step)
+_Приложение будет запущено на [http://localhost:8091](http://localhost:8091)._
 
-```
+
+#### Запуск фронтэнда
+
 # Перейдите в корневую папку `frontend` (должен содержать `package.json`)
+
+```npm
 npm install
 
 npm start
-
-# or
-
-# запустите из IDE
 ```
-Приложение будет запущено на  [http://localhost:8080](http://localhost:8080).
+_Приложение будет запущено на  [http://localhost:8080](http://localhost:8080)._
 
 ___
 
-#### Чтобы убить процесс на порту 8080 (Windows):
-```
+_Чтобы убить процесс на порту 8080 (Windows)_:
+
+```sbtshell
 1. netstat -ano | findstr 8080
 2. taskkill /pid ПОРТ /F
 ``` 
