@@ -1,10 +1,10 @@
 <template>
   <v-layout column>
     <v-flex xs12 class="text-xs-center" mt-5>
-      <h1>Home page</h1>
+      <h1>Главная страница</h1>
       <h2>{{msg}}</h2>
 
-      <h2><router-link to="/secured" color="black">Go to secured page</router-link></h2>
+      <h2><router-link to="/secured" color="black">Перейти на защищенную страницу входа</router-link></h2>
     </v-flex>
   </v-layout>
 </template>

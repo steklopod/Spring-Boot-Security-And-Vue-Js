@@ -1,7 +1,7 @@
 <template>
   <v-layout column>
     <v-flex xs12 class="text-xs-center" mt-5>
-      <h1>Secured</h1>
+      <h1>Защищенная</h1>
       <h2>{{msg}}</h2>
     </v-flex>
   </v-layout>
